@@ -15,4 +15,4 @@
 /log/*.log
 /tmp
 /vendor/bundle
-/config/secrets.yml
+config/secrets.yml
