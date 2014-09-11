@@ -1,0 +1,42 @@
+ja:
+  date:
+    order: 
+      - :year
+      - :month
+      - :day
+    month_names:
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+    abbr_month_names:
+      -  1
+      -  2
+      -  3
+      -  4
+      -  5
+      -  6
+      -  7
+      -  8
+      -  9
+      -  10
+      -  11
+      -  12
+  activerecord:
+    modles:
+      event: イベント
+    attributes:
+      event:
+        name:       名前
+        place:      場所
+        start_time: 開始時間
+        end_time:   終了時間
+        content:    内容
