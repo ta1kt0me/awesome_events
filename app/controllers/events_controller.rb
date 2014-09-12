@@ -1,11 +1,17 @@
 class EventsController < ApplicationController
   before_action :authenticate
 
+  def show
+    @event = Event.find(params[:id])
+  end
+
   def new
+    p current_user.created_events
     @event = current_user.created_events.build
   end
 
   def create
+    p current_user.created_events
     @event = current_user.created_events.build(event_params)
     if @event.save
       redirect_to @event, notice: '作成しました'
