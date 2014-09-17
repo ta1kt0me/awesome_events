@@ -26,7 +26,8 @@ class EventsController < ApplicationController
 
   def update
     @event = current_user.created_events.find(params[:id])
-    if @evnet.update(event_params)
+    p @event
+    if @event.update(event_params)
       redirect_to @event, notic: '更新しました'
     else
       render :edit
