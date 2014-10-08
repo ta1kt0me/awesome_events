@@ -46,4 +46,5 @@ gem 'rails-i18n'
 
 gem 'kaminari', '~> 0.15.1'
 gem 'kaminari-bootstrap', '~> 3.0.1'
-
+gem 'ransack', '~> 1.2.2'
+gem 'rspec-rails', '~> 3.0.0', group: :test
