@@ -49,3 +49,4 @@ gem 'kaminari-bootstrap', '~> 3.0.1'
 gem 'ransack', '~> 1.2.2'
 gem 'rspec-rails', '~> 3.0.0', group: :test
 gem 'shoulda-matchers', '~> 2.6.0', group: :test
+gem 'factory_girl_rails', '~> 4.4.1', group: [:development, :test]
