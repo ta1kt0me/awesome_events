@@ -78,4 +78,16 @@ RSpec.configure do |config|
   end
 =end
   config.include FactoryGirl::Syntax::Methods
+
+  config.before(:all, type: :feature) do
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.mock_auth[:twitter] = OmniAuth::AuthHash.new({
+      provider: 'twitter',
+      uid: '12345',
+      info: {
+        nickname: 'tokutomi',
+        image: 'http://example.com/tokutomi.jpg'
+      }
+    })
+  end
 end
